@@ -16,48 +16,48 @@ Practicing compassionate code reviews is important (you can learn more from this
 ## Base Required Features 
 
 - Multi-Part Form:  
-  - [ ] Able to add feedback
-    - [ ] Data collected on individual pages & components
-    - [ ] Click on next takes you to the next page in sequence
-    - [ ] Data saves in DB after *all* the parts are completed (not piecemeal)
-    - [ ] Thank you page takes you back to the first view
-    - [ ] Old Data is cleared on form completion
+  - [YES] Able to add feedback
+    - [YES] Data collected on individual pages & components
+    - [YES] Click on next takes you to the next page in sequence
+    - [YES] Data saves in DB after *all* the parts are completed (not piecemeal)
+    - [YES] Thank you page takes you back to the first view
+    - [YES] Old Data is cleared on form completion
 
 - Client code:
-  - [ ]  Individual components for each form part
-  - [ ]  Redux setup complete
-    - [ ] Store linked to react with `<Provider>`
-    - [ ] Store setup with reducer(s) and logger middleware 
-  - [ ] Reducers & Actions Working
-    - [ ] Actions are in SCREAMING_SNAKE_CASE and semantically named
-    - [ ] Actions have a `type` key, and `payload` if sending data
-    - [ ] Reducers are returning a new state, or the old state (not mutating)
-    - [ ] Reducers are using spread correctly (to keep old data, while adding new)
-  - [ ] Review Component shows at all times with current redux state
-  - [ ] React-Redux Working
-    - [ ] Dispatching actions onClick
-    - [ ] Grabbing data from the redux store with `useSelector`
-  - [ ] Axios POST request to add feedback
+  - [YES]  Individual components for each form part
+  - [YES]  Redux setup complete
+    - [YES] Store linked to react with `<Provider>`
+    - [YES] Store setup with reducer(s) and logger middleware 
+  - [YES] Reducers & Actions Working
+    - [YES] Actions are in SCREAMING_SNAKE_CASE and semantically named
+    - [YES] Actions have a `type` key, and `payload` if sending data
+    - [YES] Reducers are returning a new state, or the old state (not mutating)
+    - [N/A] Reducers are using spread correctly (to keep old data, while adding new)
+  - [YES] Review Component shows at all times with current redux state
+  - [YES] React-Redux Working
+    - [YES] Dispatching actions onClick
+    - [YES] Grabbing data from the redux store with `useSelector`
+  - [YES] Axios POST request to add feedback
 
 
 - Server code:   
-  - [ ] Router made for GET, POST
+  - [YES] Router made for GET, POST
 
 
 ## General Items
 Feedback should be provided for these items, but they do not impact scoring.
 
 - Git 
-  - [ ] Multiple git commits showing incremental progress
-  - [ ] Commits are descriptive of the changes made or feature added 
-  - [ ] Has .gitignore with node_modules
-  - [ ] Readme file updated (assuming this is previously discussed)
+  - [YES] Multiple git commits showing incremental progress
+  - [YES] Commits are descriptive of the changes made or feature added 
+  - [YES] Has .gitignore with node_modules
+  - [YSE] Readme file updated (assuming this is previously discussed)
 - Code Style 
-  - [ ] Appropriate amount of code comments
-  - [ ] Code is consistently formatted
+  - [YES] Appropriate amount of code comments
+  - [YES] Code is consistently formatted
 - Client
-  - [ ] Appropriate use of HTML tags
-  - [ ] Basic CSS styling with margins/padding
+  - [YES] Appropriate use of HTML tags
+  - [YES] Basic CSS styling with margins/padding
 
 
 ## Stretch Goals
@@ -88,13 +88,15 @@ First must be complete for score of  _Exceeds Expectations_
 ## Markdown
 
 ```
-Hey ___,
+Hey Tim,
 
 General Feedback.
 
+Looks good!
+
 ---
 | Functional Requirements | Complete? |
-| --- | :---: |
+| YES | :---: |
 | Multi page form with client side routing and navigation (next button) | no |
 | Data stored in Redux when navigating from page to page | no |
 | User is notified when trying to leave a blank score | no |
@@ -109,9 +111,14 @@ General Feedback.
 
 Notes on the above Functional Requirements.
 
+-Could have added a min and max to the inputs, that way you don't even have the option to choose a number outside of 1-5, and only alerted for an empty value.
+-Technically the comments section was listed as being "optional" so you didn't need to have the input validation there.
+-README is simple and concise 
+-Overall, super clean
+
 ---
 | General Items | Complete? |
-| --- | :---: |
+| YES | :---: |
 | More than 15 git commits | no |
 | Commits are descriptive of the changes made or feature added | no |
 | Readme file updated | no |
@@ -123,5 +130,8 @@ Notes on the above Functional Requirements.
 ### Notes:
 
 Notes on General Items
+
+-very good code comments, super descriptive, makes it easy to read/understand
+-could have added additional/different styling but funcionally it's all there
 
 ```
